@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>family portfolio</title>
+<link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<h1>family portfolio</h1>
+<img id="flippingimage"
+src="20131229_114737.jpg">
+<div>
+    <button id="next" type="button" onclick="ufamily()">
+        Next
+    </button>
+</div>
+
+ <p1 id="family"> family album   </p1>
+ <script>
+var store= ["family album","father","mother","brother","sister"];
+var imgstore=["20131229_114737.jpg","20121231_112941.jpg","20150703_181542.jpg","20151002_163147.jpg","20130608_153811.jpg"];
+var i=0
+function ufamily(){
+    document.getElementById("family").innerHTML=store[i];
+    document.getElementById("flippingimage").src=imgstore[i];
+    i++; 
+    if(i==5){i=0;}
+}
+</script>
+</body>
+</html>
